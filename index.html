@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>移动touch轮播</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+
+<body>
+<div id="lomo-pay">
+	<div class="banner">
+		<div id="bannerlist" class="bannerlist">
+			<a href="#"><img src="img/3.jpg"></a>
+			<a href="#" class="active"><img src="img/1.jpg"></a>
+			<a href="#"><img src="img/2.jpg"></a>
+			<a href="#"><img src="img/3.jpg"></a>
+			<a href="#"><img src="img/1.jpg"></a>
+		</div>
+		<ol id="bannerindex" class="bannerindex">
+			<li class="thisindex"></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+</div>
+
+<script src="js/fontset.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/myswipe.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var list = document.getElementById('bannerlist');
+	var index = document.getElementById('bannerindex');
+	var c = new Carousel(list, index);
+	c.init({
+		'speed': 300,
+		'delay': 1000,
+		'autoplay': true,
+		'direction': -1
+	});
+</script>
+</body>
+
+</html>
