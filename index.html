@@ -32,6 +32,14 @@
 	var list = document.getElementById('bannerlist');
 	var index = document.getElementById('bannerindex');
 	var c = new Carousel(list, index);
+	/**
+	 * 配置参数，只有这四个
+	 * speed 轮播速度 越大越慢
+	 * delay 轮播间隙ms 越大越慢
+	 * autoplay 自动播放
+	 * direction 小于0向左轮播 大于0向右轮播
+	 *
+	 */
 	c.init({
 		'speed': 300,
 		'delay': 1000,
